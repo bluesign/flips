@@ -12,7 +12,7 @@
 
 This FLIP proposes a Cadence contract standard for Network Offers which can be placed 
 against NFTs listed for sale and are broadcast as events. Prospective buyers can enjoy 
-the broadest possible reach for an offer to be matched with available listings. It 
+the broadest possible reach for an offer to be matched with available NFT listings. It 
 conversely gives sellers access to the widest breadth of offers being made on network. 
 It also builds in utility and management functionality for cleanup and other maintenance.
 
@@ -26,7 +26,7 @@ the network and include them for sale if the commissions received meet the minim
 required. However, the equivalent ecosystem mechanics are not provided to prospective
 buyers interested in NFTs for sale.
 
-This proposal introduces a NFT sale offer creation mechanism used by prospective buyers,
+This proposal introduces a NFT offer creation mechanism used by prospective buyers,
 and the means for sellers to consume offers. Prospective buyers can create offers and
 specify filter criteria, which is notified to the network as an event. Interested 
 marketplaces can consume `OfferAvailable` events and match filter criteria to listings 
@@ -60,8 +60,8 @@ the NFT for the offered amount.
 
 Prospective buyers can specify `offerFilters` at the time of Offer creation to match
 specific traits of a NFT. This enables them to target specific collections, rarities,
-collection specific traits, price and other filter dimensions. Marketplaces will
-assess filters
+collection specific traits, price and other filter dimensions. Marketplaces will 
+match offer filters to sales listing they host.
 
 We introduce the generic `OfferMatcher` contract interface that provides the 
 `OfferMatcherPublic` resource interface, Whoever wants to introduce the filters 
