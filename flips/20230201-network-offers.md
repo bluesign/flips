@@ -50,7 +50,7 @@ members for additional input to ensure the best solution is released to the
 network.
 
 ## Design Proposal
-![](20230201-network-offers/offers-system-view.png)
+![](20230201-network-offers/offers-system-view.jpg)
 
 Prospective buyers create new `Offer`s using the `OfferManager` resource’s 
 `createOffer` function. The `Offer` resource represents an offer created by the 
@@ -75,6 +75,8 @@ to offer incentives to different stakeholders if desired.
 Offer also respects the royalty of the NFT, If NFT follows the 
 `MetadataViews.RoyaltyView` then during the purchase all the royalty receivers 
 would be paid as per their desired sale cut.
+
+![](20230201-network-offers/offers-component-flow.jpg)
 
 The [PR](https://github.com/onflow/Offers/pull/1) with the implementation to date
 is available for review and comment.
